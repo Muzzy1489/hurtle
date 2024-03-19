@@ -1,6 +1,6 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.35.1.
+-- This file has been generated from package.yaml by hpack version 0.36.0.
 --
 -- see: https://github.com/sol/hpack
 
@@ -28,7 +28,9 @@ library
       base >=4.7 && <5
     , containers
     , megaparsec
+    , mtl
     , parser-combinators
+    , transformers
   default-language: GHC2021
 
 executable cswk-hurtle
@@ -45,7 +47,9 @@ executable cswk-hurtle
     , containers
     , cswk-hurtle
     , megaparsec
+    , mtl
     , parser-combinators
+    , transformers
   default-language: GHC2021
 
 test-suite cswk-hurtle-test
@@ -69,10 +73,12 @@ test-suite cswk-hurtle-test
     , directory
     , filepath
     , megaparsec
+    , mtl
     , parser-combinators
     , random
     , tasty
     , tasty-hunit
     , tasty-quickcheck
     , tasty-reporter-muffled
+    , transformers
   default-language: GHC2021

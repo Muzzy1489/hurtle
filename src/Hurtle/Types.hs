@@ -22,6 +22,8 @@ data HogoCode
   | ClearScreen
   -- | Control Flow
   | Repeat Int HogoProgram
+  | DefineSub String HogoProgram
+  | CallSub String
   deriving (Show,Read,Eq)
 
 -- | This is an alias for the Megaparsec parser type; the "Void" tells it that we don't have any custom error type, and the "string" tells it that we're parsing strings.
